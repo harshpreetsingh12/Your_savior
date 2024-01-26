@@ -2,8 +2,8 @@ import React, { useState ,useEffect} from 'react'
 import { Text, View ,StyleSheet, Button, Image, TouchableOpacity} from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import {HomeIcon,ClipboardDocumentListIcon, PencilSquareIcon, UserIcon, MapIcon} from "react-native-heroicons/outline";
-import sanityClient from '../Sanity';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+// import sanityClient from '../Sanity';
+// import AsyncStorage from '@react-native-async-storage/async-storage';
 import {auth} from '../firebase'
 
 const NavBar =({routename})=> {
