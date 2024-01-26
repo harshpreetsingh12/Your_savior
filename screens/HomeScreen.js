@@ -3,13 +3,13 @@ import React, { useState,useEffect } from 'react'
 import { Text, View ,StyleSheet, Button, SafeAreaView,ScrollView, TouchableOpacity,Image,ActivityIndicator} from 'react-native'
 import SosButtons from '../components/SosButtons';
 import SafeViewAndroid from "./SafeViewAndroid";
-import {ChatBubbleLeftRightIcon} from "react-native-heroicons/outline";
-import {auth} from '../firebase'
-import useAuth from '../hooks/useAuth';
-import NavBar from '../components/NavBar';
-import sanityClient from '../Sanity';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useRoute } from '@react-navigation/native'
+// import {ChatBubbleLeftRightIcon} from "react-native-heroicons/outline";
+// import {auth} from '../firebase'
+// import useAuth from '../hooks/useAuth';
+// import NavBar from '../components/NavBar';
+// import sanityClient from '../Sanity';
+// import AsyncStorage from '@react-native-async-storage/async-storage';
+// import { useRoute } from '@react-navigation/native'
 // import AsyncStorage from '@react-native-community/async-storage';
 // import * as Location from 'expo-location';
 
@@ -30,25 +30,25 @@ const HomeScreen =()=> {
   //         setLocation(location);
   //       })();
   // }
-  const GetNumber = async () => {
-    if (auth.currentUser?.email.length!=0){
-    const Unum = await AsyncStorage.getItem('Userinfo')
-    if(Unum!=null) {
-      // console.log('1')
-      setNumber(JSON.parse(Unum))
-    }
-    else{
-      // console.log('2')
-      const Uinfo = await sanityClient.fetch(`
-      *[_type == "Userinfo" && email =='${auth.currentUser?.email}']{
-        ...,
-      }`)
-      const Unumber = JSON.stringify(Uinfo)
-      await AsyncStorage.setItem('Userinfo', Unumber)
-        setNumber(JSON.parse(Unumber))
-  }
-}
-  }
+//   const GetNumber = async () => {
+//     if (auth.currentUser?.email.length!=0){
+//     const Unum = await AsyncStorage.getItem('Userinfo')
+//     if(Unum!=null) {
+//       // console.log('1')
+//       setNumber(JSON.parse(Unum))
+//     }
+//     else{
+//       // console.log('2')
+//       const Uinfo = await sanityClient.fetch(`
+//       *[_type == "Userinfo" && email =='${auth.currentUser?.email}']{
+//         ...,
+//       }`)
+//       const Unumber = JSON.stringify(Uinfo)
+//       await AsyncStorage.setItem('Userinfo', Unumber)
+//         setNumber(JSON.parse(Unumber))
+//   }
+// }
+//   }
   // const getUser = async()=>{
   //   const data = await AsyncStorage.getItem('CurrentUser')
   //   console.log('come',data)
