@@ -15,14 +15,14 @@ const firebaseConfig = {
   appId: "1:12161338293:web:2042e984bf635f721f67fc",
   measurementId: "G-LCHX9SLWH8"
 };
-
 // Initialize Firebase
+const firebaseObj =firebase.default
 let app;
-if (firebase.apps.length === 0){
-    app=firebase.initializeApp(firebaseConfig);
+if (firebaseObj.apps.length === 0){
+    app=firebaseObj.initializeApp(firebaseConfig);
 }else{
-    app=firebase.app()
+    app=firebaseObj.app()
 }
-const auth=firebase.auth();
+const auth=firebaseObj.auth();
 
 export {auth};

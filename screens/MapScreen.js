@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react'
-import { Text, View,Image ,StyleSheet,ScrollView,TextInput,PermissionsAndroid,ActivityIndicator,TouchableOpacity} from 'react-native'
+import { Text, View,Image ,StyleSheet,ScrollView,TextInput,ActivityIndicator,TouchableOpacity} from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import SafeViewAndroid from "./SafeViewAndroid";
-import MapView,{Marker} from "react-native-maps";
+// import MapView,{Marker} from "react-native-maps";
 import {UserIcon,MapPinIcon} from "react-native-heroicons/outline";
 // import Geolocation from 'react-native-geolocation-service';
 import {PlusIcon, GlobeAsiaAustraliaIcon} from "react-native-heroicons/outline";

@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import { Text, View ,StyleSheet,TextInput,Button,TouchableOpacity, ScrollView, Platform,Image,
-  PermissionsAndroid,ActivityIndicator} from 'react-native'
+  ActivityIndicator} from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { auth } from '../firebase';
 import {useForm, SubmitHandler,Controller} from 'react-hook-form'

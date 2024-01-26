@@ -6,7 +6,9 @@ import { useRoute } from '@react-navigation/native'
 import * as SMS from 'expo-sms';
 // import { auth } from '../firebase';
 // import sanityClient from '../Sanity';
-import SendSMS from 'react-native-sms'
+
+// import SendSMS from 'react-native-sms'
+
 // import {check, request, RESULTS, PERMISSIONS} from 'react-native-permissions';
 // import SmsAndroid from 'react-native-get-sms-android';
 

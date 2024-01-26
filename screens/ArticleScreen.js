@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import { Text, View ,StyleSheet,ScrollView,TextInput,PermissionsAndroid,ActivityIndicator,TouchableOpacity,} from 'react-native'
+import { Text, View ,StyleSheet,ScrollView,TextInput,ActivityIndicator,TouchableOpacity,} from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ArticlePost from '../components/ArticlePost'

@@ -74,7 +74,7 @@ const HomeScreen =()=> {
     // console.log('Home',cuser)
     return (
       <>
-      <SafeAreaView  style={SafeViewAndroid.AndroidSafeArea}>
+      <SafeAreaView className={"mainCLass"} style={SafeViewAndroid.AndroidSafeArea}>
         <ScrollView>
       <View className='flex relative justify-center items-center py-4'
       // onTouchStart={e=> this.touchX = e.nativeEvent.pageX}
