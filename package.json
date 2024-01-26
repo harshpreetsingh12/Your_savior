@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build": "npx expo export:web"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
@@ -46,7 +47,8 @@
     "react-native-sms": "^1.11.0",
     "react-native-svg": "13.4.0",
     "react-native-web": "^0.18.9",
-    "tailwindcss-react-native": "^1.7.10"
+    "tailwindcss-react-native": "^1.7.10",
+    "@expo/webpack-config": "^0.17.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
