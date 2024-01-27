@@ -26,7 +26,7 @@ const NavBar =({routename})=> {
   //   },[]);
   // console.log("navbar",currentUser)
     return (
-      <View className='bg-gray-100 w-full h-14 fixed bottom-0 flex-row justify-center items-center'>
+        <View className='bg-gray-100 w-full h-14 fixed bottom-0 flex-row justify-center items-center' style={{position:'fixed'}}>
         {/* <Button title='go to home screen' onPress={()=>navigation.navigate('Chat')}/>
         <Button title='go to feed screen' onPress={()=>navigation.navigate('Chat')}/> */}
         <TouchableOpacity className={`m-0 h-full bg-gray flex justify-center items-center px-4 border-t-2 

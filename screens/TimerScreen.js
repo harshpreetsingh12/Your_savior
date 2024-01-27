@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { Text, View ,StyleSheet,TouchableOpacity} from 'react-native'
+import { Text, View ,StyleSheet,TouchableOpacity,SafeAreaView} from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { useRoute } from '@react-navigation/native'
 // import {Constants,SMS} from 'expo';
@@ -83,6 +83,8 @@ const Timer =()=> {
 
     
     return (
+      <SafeAreaView className='flex justify-center items-center'>
+      <View className='max-w-[390px]'>
       <View className='absolute z-50 w-full top-0 h-full bg-[#ff5e5e69] flex justify-center items-center'>
           {alert==='SOS'?(
         <Text className='text-black m-8 p-2 bg-gray-100 rounded-full'>
@@ -102,6 +104,8 @@ const Timer =()=> {
             <Text className='text-black'>Cancel Alert</Text>
         </TouchableOpacity>
       </View>
+      </View>
+      </SafeAreaView>
     )
 }
 export default Timer;

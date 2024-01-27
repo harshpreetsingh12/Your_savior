@@ -101,7 +101,9 @@ const FeedScreen =()=> {
 
     return (
     <>
-      <SafeAreaView className='relative'>
+      <SafeAreaView className='flex justify-center items-center relative'>
+
+      <View className='max-w-[390px] min-w-[390px]'>
         {usern &&
         <TouchableOpacity onPress={()=>{navigation.navigate('Newpost')}} className='z-50 absolute bottom-20 right-5 p-2 bg-[#FF5757] rounded-full'>
         <PlusIcon color='white' size={34}/>
@@ -180,6 +182,7 @@ const FeedScreen =()=> {
           </View>
       </ScrollView>
         )}
+        </View> 
       </SafeAreaView>
       </>
     )

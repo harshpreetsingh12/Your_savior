@@ -12,7 +12,8 @@ const FullArticleScreen =()=> {
     title,Article
     },} = useRoute();
     return (
-      <SafeAreaView>
+      <SafeAreaView className='flex justify-center items-center'>
+      <View className='max-w-[390px]'>
         <ScrollView>
         <View className='flex justify-center items-center py-3 relative'>
           <TouchableOpacity onPress={navigation.goBack} className='p-2 bg-gray-300 rounded-full absolute  left-4 top-4'>
@@ -32,6 +33,7 @@ const FullArticleScreen =()=> {
       </View>
           </View>
           </ScrollView>
+          </View>
       </SafeAreaView>
     )
 }

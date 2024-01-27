@@ -7,6 +7,16 @@ module.exports = {
   ],
   plugins: [],
   // ...
+  theme: {
+    extend: {
+      maxWidth: {
+        '128': '32rem',
+      },
+      minWidth: {
+        '128': '32rem',
+      }
+    }
+  }
 };
 
 // module.exports = {

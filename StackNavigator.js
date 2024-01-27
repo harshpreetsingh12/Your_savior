@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React, { useEffect, useState } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View ,SafeAreaView} from 'react-native'
 import useAuth from './hooks/useAuth';
 import FeedScreen from './screens/FeedScreen';
 import HomeScreen from './screens/HomeScreen'
@@ -25,7 +25,7 @@ const StackNavigator =()=> {
   const {user} = useAuth();
 // console.log('stack',user)
     return (
-      <>
+      < >
      <Stack.Navigator>
      {/* <Stack.Screen name='Start' component={StartScreen}
          options={{headerShown:false,}}/> */}

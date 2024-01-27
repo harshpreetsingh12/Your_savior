@@ -36,7 +36,8 @@ const ArticleScreen =()=> {
 //     this.setState({"myKey": value});
 // }).done();
   return (
-      <SafeAreaView className='bg-white'>
+    <SafeAreaView className='bg-white flex justify-center items-center'>
+    <View className='max-w-[390px]'>
         <View className='flex-col items-center justify-centerw-full h-full'>
                <Text className='text-lg py-3 w-full text-center border-b-2 border-gray-200'>Savior Rights</Text>
                {/* <Text className='text-lg py-1 w-full text-center border-b-2 border-gray-200'>These are your rights as a citizen of</Text> */}
@@ -49,6 +50,7 @@ const ArticleScreen =()=> {
                />
             ))}
             </ScrollView>
+           </View>
            </View>
       </SafeAreaView>
     )

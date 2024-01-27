@@ -109,7 +109,8 @@ const UserSetting =()=> {
 if (userdet.length===0) return <View className='flex h-full justify-center items-center'><ActivityIndicator size="large" color="#FF5757" /></View>
 // console.log(userdet[0].image,'user',userdet)
     return (
-      <SafeAreaView>
+      <SafeAreaView className='flex justify-center items-center'>
+      <View className='max-w-[390px]'>
       <ScrollView className='flex h-full' showsVerticalScrollIndicator={false}>
       <View className='flex-row justify-between items-center'>
         <View className='flex-row justify-center items-center'>
@@ -212,6 +213,7 @@ if (userdet.length===0) return <View className='flex h-full justify-center items
         </TouchableOpacity> */}
 
       </ScrollView>
+      </View>
       </SafeAreaView>
     )
 }

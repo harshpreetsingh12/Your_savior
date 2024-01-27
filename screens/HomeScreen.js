@@ -72,11 +72,13 @@ const HomeScreen =()=> {
     },[]);
     // if (number.length==0 ) return <View className='flex h-full justify-center items-center'><ActivityIndicator size="large" color="#FF5757" /></View>
     // console.log('Home',cuser)
+    // max-w-xl m-auto
     return (
       <>
-      <SafeAreaView className={"mainCLass"} style={SafeViewAndroid.AndroidSafeArea}>
+      <SafeAreaView className='flex justify-center items-center' style={SafeViewAndroid.AndroidSafeArea}>
+        <View className='max-w-[390px]'>
         <ScrollView>
-      <View className='flex relative justify-center items-center py-4'
+      <View className='flex relative justify-center items-center py-4 '
       // onTouchStart={e=> this.touchX = e.nativeEvent.pageX}
       // onTouchEnd={e => {
       //   if (this.touchX - e.nativeEvent.pageX > 20)
@@ -117,6 +119,7 @@ const HomeScreen =()=> {
       
       </View>
       </ScrollView>
+      </View>
       </SafeAreaView>
       </>
     )

@@ -6,7 +6,8 @@ import { useNavigation } from '@react-navigation/native'
 const AboutSavior =()=> {
     const navigation = useNavigation();
     return (
-        <SafeAreaView>
+      <SafeAreaView className='flex justify-center items-center'>
+      <View className='max-w-[390px]'>
       <ScrollView>
         <View className='h-full bg-white flex items-center'>
         <TouchableOpacity onPress={navigation.goBack} className='absolute top-10 left-5 z-10 p-2 bg-gray-300 rounded-full'>
@@ -59,6 +60,7 @@ const AboutSavior =()=> {
 
 </View>
       </ScrollView>
+      </View>
           </SafeAreaView>
     )
 }

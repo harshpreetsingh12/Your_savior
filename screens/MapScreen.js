@@ -44,7 +44,9 @@ const MapScreen =()=> {
 
 
   return (
-      <SafeAreaView>
+    <SafeAreaView className='flex justify-center items-center relative'>
+
+    <View className='max-w-[390px] min-w-[390px]'>
         <View className='flex-col items-center justify-center space-x-1 w-full p-2 pb-2'>
         <TouchableOpacity className='z-50 absolute -bottom-14 right-5 p-2 bg-[#FF5757] rounded-full'>
         <GlobeAsiaAustraliaIcon color='white' size={34}/>
@@ -98,6 +100,7 @@ const MapScreen =()=> {
          description={""}/>
     </MapView>
  )} */}
+ </View>
       </SafeAreaView>
     )
 }

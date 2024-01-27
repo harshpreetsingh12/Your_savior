@@ -71,7 +71,8 @@ const PostScreen =()=> {
     console.log("pla")
   }
     return (
-      // <SafeAreaView>
+      <SafeAreaView className='flex justify-center items-center'>
+      <View className='max-w-[390px] min-w-[390px]'>
        <ScrollView className='flex bg-white' showsVerticalScrollIndicator={false}
        >
         <View className='relative'>
@@ -187,7 +188,8 @@ const PostScreen =()=> {
         </View>
       
        </ScrollView>
-      // </SafeAreaView> 
+       </View>
+      </SafeAreaView> 
     )
 }
 export default PostScreen;

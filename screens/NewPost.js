@@ -88,7 +88,8 @@ const onSubmit = async data => {
     }
 )}
     return ( 
-        <SafeAreaView>
+      <SafeAreaView className='flex justify-center items-center'>
+      <View className='max-w-[390px]'>
        <ScrollView >
         <View className='flex h-full w-full items-center'>
         {posted &&
@@ -193,6 +194,7 @@ const onSubmit = async data => {
         )}
             </View>
       </ScrollView> 
+            </View>
         </SafeAreaView>
     )
 }
