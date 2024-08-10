@@ -1,11 +1,11 @@
-// Import the functions you need from the SDKs you need
-import * as firebase from "firebase";
-// import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// Import the specific functions you need from Firebase SDK
+import { initializeApp, getApps, getApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+// Add other Firebase services you need, like Firestore or Storage, here:
+// import { getFirestore } from "firebase/firestore";
+// import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: process.env.REACT_FIREBASE_API_KEY,
   authDomain: "your-savior.firebaseapp.com",
@@ -15,14 +15,16 @@ const firebaseConfig = {
   appId: process.env.REACT_FIREBASE_APP_ID,
   measurementId: "G-LCHX9SLWH8"
 };
-// Initialize Firebase
-const firebaseObj =firebase.default
-let app;
-if (firebaseObj.apps.length === 0){
-    app=firebaseObj.initializeApp(firebaseConfig);
-}else{
-    app=firebaseObj.app()
-}
-const auth=firebaseObj.auth();
 
-export {auth};
+// Initialize Firebase
+let app;
+if (!getApps().length) {
+  app = initializeApp(firebaseConfig);
+} else {
+  app = getApp();
+}
+
+// Initialize Firebase Authentication and export it for use in your components
+const auth = getAuth(app);
+
+export { auth };
