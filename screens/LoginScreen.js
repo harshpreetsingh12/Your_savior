@@ -9,6 +9,7 @@ import sanityClient from '../Sanity';
 import * as ImagePicker from 'expo-image-picker';
 import {PlusIcon,PhoneIcon, UserIcon, InboxStackIcon,AtSymbolIcon ,LockClosedIcon,EyeIcon, EyeSlashIcon} from "react-native-heroicons/outline";
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 const LoginScreen =()=> {
 // const { user } = useAuth();
@@ -88,8 +89,7 @@ const handleSignUp= async ()=>{
       _type: '...',
       name: '....',
     };
-  auth
-  .createUserWithEmailAndPassword(email,password)
+  createUserWithEmailAndPassword(auth,email,password)
   .then(userCredentials=>{
     userCredentials.user.updateProfile({
       displayName:username,
@@ -116,8 +116,7 @@ const handleSignUp= async ()=>{
 const handleLogIn=(event)=>{
   setloading(true)
   event.preventDefault();
-  auth
-  .signInWithEmailAndPassword(email,password)
+  signInWithEmailAndPassword(auth, email,password)
   .then(userCredentials=>{
     const user = userCredentials.user
   })
