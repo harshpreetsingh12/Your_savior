@@ -24,7 +24,7 @@ if (!getApps().length) {
   app = getApp();
 }
 
-// Initialize Firebase Authentication and export it for use in your components
+// Initialize Firebase Authentication and export it for use in your component
 const auth = getAuth(app);
 
 export { auth };
