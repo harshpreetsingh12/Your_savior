@@ -7,12 +7,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_FIREBASE_API_KEY,
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "your-savior.firebaseapp.com",
   projectId: "your-savior",
   storageBucket: "your-savior.appspot.com",
   messagingSenderId: "12161338293",
-  appId: process.env.REACT_FIREBASE_APP_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
   measurementId: "G-LCHX9SLWH8"
 };
 
